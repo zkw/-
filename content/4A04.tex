@@ -1,0 +1,276 @@
+\documentclass[content.tex]{subfiles}
+
+\title{小学数学思维潜力课 / 四年级暑假 \\ (竖式谜)}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{例 1}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  &           & \text{大} & \text{上} & \text{海}\\
++ &           & \text{海} & \text{上} & \text{大}\\
+\hline
+  & \text{上} & \text{上} & \text{海} & \text{上}
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑千位, 必定有进位 $1$, $\text{上}=1$ . \\
+考虑百位, $\text{大}+\text{海}$ 有进位. \\
+考虑个位, 和百位一样, 有进位. \\
+考虑十位, $\text{海} = 1 + 1 + 1 = 3$ . \\
+考虑个位, $\text{大} = 11 - 3 = 8$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{例 2}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & \text{字} & \text{字} & \text{谜}\\
+  &           & \text{谜} & \text{数}\\
++ &           &           & \text{数}\\
+\hline
+  & \text{数} & \text{字} & \text{谜}
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑个位, $\text{数} + \text{数} \equiv 0 \pmod{10}\implies \text{数}=0\text{或}5$ . \\
+考虑百位, $\text{数} \neq 0$, 因此$\text{数}=5$ . $\text{字} \neq \text{数}$, 因此有进位, $\text{字} = 4$. \\
+考虑十位, $\text{字} + \text{谜} + 1 = \text{字} + 10 \implies \text{谜} = 9$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{例 3}
+在下面的减法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & A & B & A & B \\
+- &   & A & C & A \\
+\hline
+  & B & A & A & C
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑十位, $A-C-(0\text{或}1)\equiv A\pmod{10}\implies C=0\text{或}9$ . \\
+考虑个位, $B\neq A\implies C \neq 0 \implies C = 9$ . \\
+考虑千位, $B = A - 1$. \\
+考虑百位, $10+B-1-A=A\implies 2A-B=9$.
+$$2A-(A-1)=9\implies A = 8\implies B = A-1=7\;.$$
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{例 4}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & \text{趣} & \text{味} & \text{数} & \text{学} \\
+  &           & \text{趣} & \text{味} & \text{数} \\
+  &           &           & \text{趣} & \text{味} \\
++ &           &           &           & \text{趣} \\
+\hline
+  &         1 &         9 &         9 &         5
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑千位, $\text{趣}=1$. 算式变为
+$\text{味数学}+\text{味数}+\text{味}=884\;,$ \\
+味只能是 $7$, 算式变为 $\text{数学}+\text{数}=107\;,$ \\
+数只能是 $9$, $\implies \text{学}=8$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{例 5}
+在下面的乘法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & \text{从} & \text{小} & \text{爱} & \text{数} & \text{学}\\
+\times &      &           &           &           &         4\\
+\hline
+  & \text{学} & \text{数} & \text{爱} & \text{小} & \text{从}\\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑万位, $\text{从}=1\text{或}2$. 考虑个位, 从是偶数, 因此 $\text{从} = 2$. \\
+考虑个位, $\text{学}\times4\equiv 2\pmod{10}\implies\text{学}=3\text{或}8$. \\
+考虑万位, $\text{学}=8$, 无进位. \\
+考虑千位, $\text{小}\times 4$ 无进位, $\text{小}=0\text{或}1\text{或}\xcancel{2}$. \\
+考虑十位, $\text{数} \times 4 + 3\equiv\text{小}\pmod{10}$, 因此小是奇数, $\text{小}=1$ . \\
+考虑十位, $\text{数} \times 4 + 3\equiv\text{小}\pmod{10}$, 因此 $\text{数}=\xcancel{2}\text{或}7$ . \\
+考虑百位, $\text{爱} \times 4 + 3 = 30 + \text{爱}$，$\text{爱}=9$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{例 6}
+在下面的乘法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+       & \text{春} & \text{夏} & \text{秋} 
+       & \text{冬} & \text{四} & \text{季} \\
+\times &&&&&&                    \text{季} \\
+\hline
+       & \text{年} & \text{年} & \text{年} 
+       & \text{年} & \text{年} & \text{年} \\
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+看起来没有什么好办法, 只能枚举个位. \\
+若$\text{季}=0\text{或}1\text{或}5\text{或}6$, $\text{年}=\text{季}$, 不合题意. \\
+若$\text{季}=2$, 则 $\text{年}=4$. $\overline{\text{春夏秋冬四季}}=222222$, 不合题意. \\
+若$\text{季}=3$, 则 $\text{年}=9$. $\overline{\text{春夏秋冬四季}}=333333$, 不合题意. \\
+若$\text{季}=4$, 则 $\text{年}=6$. $\overline{\text{春夏秋冬四季}}=666666/4$, 不是整数. \\
+若$\text{季}=7$, 则 $\text{年}=9$. $\overline{\text{春夏秋冬四季}}=142857$, 可取. \\
+若$\text{季}=8$, 则 $\text{年}=4$. $\overline{\text{春夏秋冬四季}}=444444/8$, 不是整数. \\
+若$\text{季}=9$, 则 $\text{年}=1$. $\overline{\text{春夏秋冬四季}}=111111/9$, 不是整数. 
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A1}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  &   &   & A & B & C \\
++ &   & A & B & B & D \\
+\hline
+  & E & F & C & G & F
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+考虑万位, $E=1$ . 考虑千位, $A = 9$, $F = 0$, 需百位进位. \\
+考虑百位, $9+B+(0\text{或}1)=C+10\implies C=\xcancel{B}\text{或}(B-1)$. \\
+考虑十位, $B+B+(0\text{或}1)=G \implies B=\xcancel{0}\text{或}\xcancel{1}\text{或}2\text{或}3\text{或}4$ . \\
+若 $B=2$, $C=1$, 不合题意. \\
+若 $B=3$, $C=2$, 考虑个位 $2+D\equiv0\pmod{10}\implies D=8$. \\
+\quad 考虑十位, $G=3+3+1=7$ . \\
+若 $B=4$, $C=3$, 考虑十位, $G=4+4+1=9=A$, 不合题意. \\
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A2}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & A & B & B & A & A \\
++ & A & B & B & A & A \\
+\hline
+  & B & B & C & C & C
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+考虑千位, $B+B+(0\text{或}1)\equiv B\pmod{10}\implies B=\xcancel{0}\text{或}9$. \\
+考虑百位, $9+9+(0\text{或}1)\equiv C\pmod{10}\implies C=8\text{或}\xcancel{9}$. \\
+考虑个位, $A+A\equiv C\pmod{10}\implies A=4$.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A3}
+在下面的减法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & C & D & E & B & C \\
+- &   & A & B & C & D \\
+\hline
+  &   & A & C & A & C
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑万位, $C=1$. \\
+考虑个位, $D=0$. \\
+考虑千位, $10+D-(0\text{或}1)-A=A\implies A=5$ . \\
+考虑十位, $B-1\equiv 5\pmod{10}\implies B=6$ . \\
+考虑百位, $E-6=1\implies E=7$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A4}
+在下面的减法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & A & B & C & D \\
+- & D & C & B & A \\
+\hline
+  & 8 & E & F & E
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+考虑千位, $A=9, D=1$. 考虑个位, $E=11-9=2$, 有借位. \\
+考虑百位, $B-(0\text{或}1)-C=2\implies C < B$. 故十位不够减. \\
+考虑百位, $B-1-C=2\implies B-C=3$.
+$\overline{BC}=30\text{或}\xcancel{41}\text{或}\xcancel{52}\text{或}63\text{或}74\text{或}85\text{或}\xcancel{96}$. \\
+若 $\overline{BC}=30\implies F=6$. \\
+若 $\overline{BC}=63\implies F=6=B$, 矛盾. \\
+若 $\overline{BC}=74\implies F=6$. \\
+若 $\overline{BC}=85\implies F=6$. \hfil (习题 A5: 与例 5 相同, 跳过不讲.) \hfil
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A6}
+在下面的乘法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+       &   & A & B \\
+\times &   & C & B \\
+\hline
+       & C & A & B \\
+       & A & B \\
+\hline
+       & D & E & B       
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+显然 $C=1$. $B\times B = B\implies B = \xcancel{0}\text{或}\xcancel{1}\text{或}5\text{或}6$. \\
+若 $B=5$, $5(10A+5)=100+10A+5\implies A=2$. \\
+若 $B=6$, $6(10A+6)=100+10A+6\implies A=7/5$, 不合题意. 
+\end{exampleblock}
+\centering (习题 A7, A8: 较难, 移至习题课.)
+\end{frame}
+
+\begin{frame}{习题 A9}
+$$
+\begin{matrix}
+  &           & \text{妙} & \text{啊} & \text{妙} \\
++ &           & \text{真} & \text{奇} & \text{妙} \\
+\hline
+  & \text{真} & \text{奇} & \text{妙} & \text{啊}
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑千位, $\text{真}=1$. \\
+考虑百位, $\text{妙}+1+(0\text{或}1)=10+\text{奇}\implies \text{奇}=0\text{或}\xcancel{1}, \text{妙}=8\text{或}9$. \\
+若 $\text{妙}=8$, 考虑十位, $\text{啊} + 0 + 1 = 18$, 不可能. \\
+若 $\text{妙}=9$, 考虑个位, $\text{啊}=8$. \\
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A10}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  &           &           & \text{新} & \text{年} \\
+  &           & \text{庆} & \text{新} & \text{年} \\
++ & \text{庆} & \text{祝} & \text{新} & \text{年} \\
+\hline
+  &         2 &         0 &         0 &         2
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑千位, $\text{庆}=1\text{或}2$. 若 $\text{庆}=2$, 和至少是 $2200$, 矛盾. \\
+故 $\text{庆}=1$, 算式变为
+$\text{新年}+\text{新年}+\text{祝新年}=902\;,$ \\
+若 $\text{祝}=9$, $\overline{\text{新年}}=2/3$, 不合题意. \\
+若 $\text{祝}=8$, $\overline{\text{新年}}=34$. \\
+若 $\text{祝}=7$, $3\overline{\text{新年}}=202/3$, 不合题意. \\
+若 $\text{祝}\le 6$, $3\overline{\text{新年}}\ge 100$, 不合题意. 
+\end{exampleblock}
+\end{frame}
+
+\end{document}

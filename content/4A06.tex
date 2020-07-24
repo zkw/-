@@ -1,0 +1,511 @@
+\documentclass[content.tex]{subfiles}
+
+\title{小学数学思维潜力课 / 四年级暑假 \\ (习题课)}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{习题 A7}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & E & L & E & V & E & N \\
+  &   & S & E & V & E & N \\
++ &   &   &   & T & W & O \\
+\hline
+  & T & W & E & N & T & Y \\
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+考虑千位. $E+E+(0\text{或}1\text{或}2)=E\implies
+E=8\text{或}9\text{或}0$. \\
+\qquad E 是首位, $T > E \implies E = 8, T = 9$. \\
+考虑十位. $8+8+W+(0\text{或}1\text{或}2)\equiv 9\pmod{10}$ \\
+\qquad $\implies W=1\text{或}2\text{或}3$. 进位 $1$. \\
+考虑百位. $V+V+9+1=20+N\implies V=5\text{或}6\text{或}7$ \\
+\qquad $\implies N=0\text{或}2\text{或}4$ . \\
+由 $N \le 4$ 得个位最多进位 $1$, 故 $W \neq 1$...
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A7 (续)}
+\begin{exampleblock}{题解}
+$$
+\begin{matrix}
+  & 8 & L & 8 & V & 8 & N \\
+  &   & S & 8 & V & 8 & N \\
++ &   &   &   & 9 & W & O \\
+\hline
+  & 9 & W & 8 & N & 9 & Y \\
+\end{matrix}
+$$
+若 $N = 0$, $O = Y$ 不合题意. \\
+若 $N = 2$, $W = 3$, 个位无进位. 考虑万位, $L+S+1=13$, \\
+\qquad $\{L,S\}=\{5,7\}$, $\overline{OY} =
+04\text{或}1\xcancel{5}\text{或}
+\xcancel{2}6\text{或}3\xcancel{7}\text{或}
+4\xcancel{8}\text{或}\xcancel{5}\xcancel{9}$. \\
+若 $N = 4$, $W = 2$, 个位有进位. 考虑万位, $L+S+1=12$, \\
+\qquad $\{L,S\}=\{5,6\}$, $\overline{OY} = 
+\xcancel{2}0\text{或}31\text{或}
+\xcancel{4}\xcancel{2}\text{或}\xcancel{5}3\text{或}
+\xcancel{6}\xcancel{4}\text{或}7\xcancel{5}\text{或}
+\xcancel{8}\xcancel{6}\text{或}\xcancel{9}7$. \\
+若 $N = 4$, $W = 2$, 个位无进位. $\overline{OY} = 
+0\xcancel{8}\text{或}1\xcancel{9}$.
+\bigbreak
+综上所述, $\overline{NWLSOY} = 
+235704\text{或}237504\text{或}
+425631\text{或}426531$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A8}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求这个算式.
+$$
+\begin{matrix}
+  & F & O & R & T & Y \\
+  &   &   & T & E & N \\
++ &   &   & T & E & N \\
+\hline
+  & S & I & X & T & Y \\
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+考虑个位. $Y+N+N\equiv Y\pmod{10}\implies N=0\text{或}5$. \\
+考虑十位. $T+E+E+(0\text{或}1)\equiv T\pmod{10}
+\implies E=0\text{或}5$. \\
+进一步, 个位向十位没有进位. 因此 $N=0,\quad E=5$. \\
+考虑万位, $S-F=1$. \\
+考虑千位, $O+(0\text{或}1\text{或}2)=10+I\implies 
+O=9,\quad I=1$. \\
+考虑百位向千位进 $2$, 得 $T=
+6\text{或}7\text{或}
+8\text{或}\xcancel{9}$.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 A8 (续)}
+\begin{exampleblock}{题解}
+$$
+\begin{matrix}
+  & F & 9 & R & T & Y \\
+  &   &   & T & 5 & 0 \\
++ &   &   & T & 5 & 0 \\
+\hline
+  & S & 1 & X & T & Y \\
+\end{matrix}
+$$
+若 $T=6$, $\overline{RX}=
+7\xcancel{0}\text{或}
+8\xcancel{1}\text{或}
+\xcancel{9}2$, 不合题意. \\
+若 $T=7$, $\overline{RX}=
+5\xcancel{0}\text{或}
+6\xcancel{1}\text{或}
+\xcancel{7}2\text{或}
+83\text{或}
+\xcancel{9}4$. \\
+\qquad 此时 $\{Y,S,F\}=\{2,4,6\}$, 没有相差 $1$ 的两个数. \\
+若 $T=8$, $\overline{RX}=
+3\xcancel{0}\text{或}
+4\xcancel{1}\text{或}
+\xcancel{5}2\text{或}
+63\text{或}74\text{或}
+\xcancel{8}5\text{或}
+\xcancel{9}6$. \\
+\qquad $\overline{RX}=63$ 时 $\{Y,S,F\}=\{2,4,8\}$, 没有相差 $1$ 的两个数. \\
+\qquad $\overline{RX}=74$ 时 $\{Y,S,F\}=\{2,3,8\} \implies 
+\overline{YSF} = 832$. 
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B1, B2, B3}
+在 $\square$ 里填写合适的数字, 使算式成立.
+$$
+\begin{matrix}
+  & \square &       6 & \square &       5 \\
++ &       3 & \square &       0 & \square \\
+\hline
+  &       8 &       4 &       3 &       9 \\
+\end{matrix}
+\qquad\qquad
+\begin{matrix}
+  &       5 &       7 & \square &       3 \\
++ & \square &       2 &       4 & \square \\
+\hline
+  &       9 & \square &       3 &       1 \\
+\end{matrix}
+$$
+$$
+\begin{matrix}
+  &       7 &       0 &       8 & \square \\
+- &       1 & \square & \square &       4 \\
+\hline
+  & \square &       4 &       3 &       2 \\
+\end{matrix}
+\qquad\qquad
+\begin{matrix}
+  &       8 &       0 &       0 &       8 \\
+- & \square &       8 &       8 & \square \\
+\hline
+  &         & \square & \square &       9 \\
+\end{matrix}
+$$
+$$
+\begin{matrix}
+  &       4 &       3 &       2 &       6 \\
++ & \square & \square & \square & \square \\
+\hline
+  &       8 &       1 &       7 &       5 \\
+\end{matrix}
+\qquad\qquad
+\begin{matrix}
+  & \square & \square & \square & \square \\
+- &       3 &       2 &       4 &       7 \\
+\hline
+  &       4 &       7 &       7 &       8 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+从右往左一个一个推即可.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B4}
+在下面的算式中, 字母 $A$ 代表同一个数字. \\
+请你推算一下 $A$ 代表几?
+$$\overline{1A} + \overline{A1} + A = \overline{11A}$$
+\begin{exampleblock}{题解}
+$$10+A+10A+1+A=110+A\implies A = 9\;.$$
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B5}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求 $A+B+C+D$.
+$$
+\begin{matrix}
+  &   & A & B \\
++ &   & C & D \\
+\hline
+  & 1 & 5 & 9
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+是否有进位呢? 如果有进位, $B + D = 19$, 这是不可能的. \\
+因此没有进位. $B + D = 9$, $A + C = 15$. 
+$$A+B+C+D=15+9=24\;.$$
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B6}
+根据 $A\times B\times C = A+B+C$, 写出 6 组 $A, B, C$ 代表的正整数.
+\begin{exampleblock}{题解}
+如果 $A\ge B\ge C\ge 2$, 
+$$ABC\ge 4A > A + B + C\;.$$
+因此 $A,B,C$ 其中有 $1$. 不妨设 $C=1$, 
+$$A+B+1=AB\implies (A-1)(B-1) = 2\;.$$
+因此 $\{A, B, C\} = \{1, 2, 3\}$. 排列, 共 6 个解.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B7.1}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求算式.
+$$
+\begin{matrix}
+  & A & B & C \\
++ & C & B & A \\
+\hline
+  & 4 & 4 & 4
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑百位, $A+C+(0\text{或}1)=4$ . \\
+考虑个位, $A+C\equiv 4 \pmod{10}$, 综合得 $A+C=4$ . \\
+考虑十位, $B+B=4\implies B=2$ . 故 $\{A, C\}=\{1,3\}$ . \\
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B7.2}
+在下面的减法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求算式.
+$$
+\begin{matrix}
+  & A & B & B & B \\
+- &   & C & C & C \\
+\hline
+  &   &   &   & A
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑千位, $A=1$ . \\
+四位数减三位数是 $1$, 只能是 $1000 - 999 = 1$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B8}
+已知下面的算式, 求猫.
+$$
+(\text{猫} + \text{猫}) + 
+(\text{猫} - \text{猫}) + 
+(\text{猫} \times \text{猫}) + 
+(\text{猫} \div \text{猫}) = 100
+$$
+\begin{exampleblock}{题解}
+整理得到 $\text{猫}^2 + 2\text{猫} + 1 = 100$. \\
+配方法得 $(\text{猫} + 1)^2=100\implies \text{猫} = 9$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B9}
+已知算式如下, 求鸡, 鸭, 鹅, 兔.
+$$
+\begin{cases}
+\text{鸡} + \text{鸭} = 8 \\
+\text{鸡} + \text{鹅} = 11 \\
+\text{兔} + \text{鹅} = 14 \\
+4 + \text{兔} = 10 \\
+\end{cases}
+$$
+\begin{exampleblock}{题解}
+从下往上一个一个推即可.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 B10}
+在下面的加法算式中, 相同的汉字代表相同的数字, \\ 不同的汉字代表不同的数字, 求算式.
+$$
+\begin{matrix}
+  & \text{节} & \text{童} & \text{儿}
+  & \text{际} & \text{国} & \text{一}
+  & \text{六} & \text{祝} & \text{庆} \\
+- & 8 & 6 & 4 & 1 & 9 & 7 & 5 & 3 & 2 \\
+\hline
+  & \text{庆} & \text{祝} & \text{六}
+  & \text{一} & \text{国} & \text{际}
+  & \text{儿} & \text{童} & \text{节} \\
+\end{matrix}
+$$
+\\[-1em]
+\begin{exampleblock}{题解}
+考虑亿位, $\text{节}=9$, $\text{庆}=1$. \\
+考虑千万位, $\text{童}=8$, $\text{祝}=2$. \\
+考虑百万位, $\text{儿}=7$, $\text{六}=3$. \\
+考虑万位, 必有借位. \\
+考虑十万位, $\text{儿}=6$, $\text{六}=4$. 
+剩下$\text{国} = 5$. \\
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C1.1}
+$$
+\begin{matrix}
+  & A & B & C & D \\
++ & A & B & C & D \\
+\hline
+  & 7 & 7 & 2 & 4 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+$7724 \div 2 = 3862$ . 
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C1.2}
+$$
+\begin{matrix}
+  & 7 & 5 & 5 & 4 \\
+- &   & E & E & E \\
+\hline
+  & F & F & F & F \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑千位, $F=6\text{或}7$ . 但 $7777 > 7554$, 故 $F=6$ . \\
+$7554-6666=888$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C2}
+$$
+\begin{matrix}
+  &   & \text{大} & \text{世} & \text{界} \\
+  &   & \text{大} & \text{世} & \text{界} \\
++ &   & \text{大} & \text{世} & \text{界} \\
+\hline
+  & 2 &         3 &         6 &         7 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+$2367 \div 3 = 789$ .
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C3}
+$$
+\begin{matrix}
+  & \text{华} & \text{夏} & \text{华} & \text{夏} \\
+- & \text{夏} & \text{华} & \text{夏} & \text{华} \\
+\hline
+  &           &         9 &         0 &         9 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑个位, $\text{夏} + 10 - \text{华} = 9 \implies 
+\text{华} - \text{夏} = 1$ . \\
+这是唯一的要求.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C4}
+$$
+\begin{matrix}
+  & \text{同} & \text{窗} & \text{好} & \text{友} \\
+- &           & \text{同} & \text{窗} & \text{好} \\
+\hline
+  & \text{友} & \text{好} & \text{友} & \text{好} \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+设 $A = \overline{\text{同窗}}$, $B = \text{好}$, 
+$C = \text{友}$. 
+\begin{align*}
+&100A+10B+C-(10A+B) = 1010C+101B \\
+\implies &90A = 92B+1009C\implies C\text{ 是偶数.} \\
+\implies &90A = 90B + 2B + 990C + 19C \\
+\implies &90(A - B - 11C) = 
+2B + 19C \le 2\times 9+19\times 8 = 170 \\
+\implies &\begin{cases}
+A - B - 11C = 1 \\
+2B + 19C = 90 \implies C=4, B=7 \\
+\end{cases}\implies A=52\;.
+\end{align*}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C5}
+$$
+\begin{matrix}
+  &   & A & B & A & C \\
++ &   & B & C & B & D \\
+\hline
+  & D & D & A & D & D \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+考虑万位, $D = 1$ . \\
+考虑个位, $C = 0$ . \\
+考虑百位, $A-B=1$ . \\
+考虑十位, $A+B=11$ . \\
+和差问题解出 $A=6$, $B=5$.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C6, C7}
+在 $\square$ 里填写合适的数字, 使算式成立.
+$$
+\begin{matrix}
+  &         & \square &       3 &       6 \\
+  &       2 &       1 &       5 & \square \\
++ &       3 &       5 & \square &       7 \\
+\hline
+  & \square &       1 &       4 &       1 \\
+\end{matrix}
+\qquad\qquad
+\begin{matrix}
+  & \square &       8 &       3 &       5 \\
+  &         & \square &       2 &       6 \\
++ &       1 &       0 & \square & \square \\
+\hline
+  &       9 &       5 &       3 &       5 \\
+\end{matrix}
+$$
+$$
+\begin{matrix}
+  &         & \square &       6 & \square \\
++ &         &       6 & \square &       6 \\
+\hline
+  & \square & \square & \square & \square \\
+- &         & \square & \square & \square \\
+\hline
+  &         &         &         &       1 \\
+\end{matrix}
+\qquad\qquad
+\begin{matrix}
+  &       4 &       0 & \square & \square \\
+- &         & \square &       6 &       2 \\
+\hline
+  & \square &       2 &       7 &       4 \\
++ &       4 & \square &       6 & \square \\
+\hline
+  & \square &       6 & \square &       2 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+注意到 $1000-999=1$, 其他的从右往左一个一个推即可.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C8}
+在 $\square$ 里填写合适的数字, 使算式成立.
+$$
+\begin{matrix}
+  &         &         & \square &       8 \\
+  &         &         & \square &       7 \\
++ &         & \square &       2 & \square \\
+\hline
+  & \square & \square &       1 &       8 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+从右往左一个一个推, 答案不唯一.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{习题 C9}
+在 $\square$ 里填写合适的数字, 使算式成立.
+$$
+\begin{matrix}
+  &         &       5 & \square &       2 \\
+\times &    &         &         &       7 \\
+\hline
+  &       3 & \square &       9 & \square \\
+\end{matrix}
+\qquad\qquad
+\begin{matrix}
+  &         & \square &       2 & \square \\
+\times &    &         &         & \square \\
+\hline
+  &       1 &       5 & \square &       1 \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+左边的算式: 从右往左一个一个推即可. \\
+右边的算式: 可以是 $3\times 7=21$ 或 $9\times 9=81$. \\
+若乘数是 $3$, 被乘数是 $527$ . \\
+若乘数是 $7$, 被乘数是 $223$ . \\
+若乘数是 $9$, 不合题意. \\
+\end{exampleblock}
+\centering (习题 C10: 排版较难, 不讲.) \\
+\end{frame}
+
+\begin{frame}{习题 C11}
+下面的算式是由 $0 \sim 9$ 十个数字组成的, 其中有几个数字漏写了, 请你把它们找出来填进去.
+$$
+\begin{matrix}
+  &         & \square &       4 & \square \\
++ &         &       3 & \square &       6 \\
+\hline
+  & \square &       0 & \square & \square \\
+\end{matrix}
+$$
+\begin{exampleblock}{题解}
+和的最高位是 $1$. 被加数的百位不是 $6$, 因此是 $7$. \\
+还剩下 $2,5,8,9$, 个位只能 $2+6=8$, 剩下十位 $4+5=9$.
+\end{exampleblock}
+\end{frame}
+\end{document}
